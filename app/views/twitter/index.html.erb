@@ -7,13 +7,16 @@
 </br>
 <%  @timeline.each do |tweet| %>    
   <div class="cardModel-tweet" >
-    <div class="cardText-name-tweet" >
+    <div class="cardText-name" >
       <%= tweet.text %>
     </div>
-    <div class="cardText-name-count" >
+    <div class="cardText-name-light" >
       <%= tweet.retweet_count %> retweets
     </div>
   </div>
 <% end %>
+
+</br>
+</br>
 
 

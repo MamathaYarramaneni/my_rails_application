@@ -8,14 +8,14 @@ a{
 }
 
 .cardModel-git{
-    margin:0 auto;
-    background-color: #f1edf7;
-    font-size:20px; 
+    background-color:  #f1edf7;
+    font-size:20px;
+    padding:20px 50px;
+    border-radius: 4px;
+    max-width: 1000px;
+    margin: 0 auto;
     margin-bottom:20px;
     font-family:monospace;
-    max-width:1000px;
-    border-radius: 4px;
-    flex-wrap:wrap;
 }
 
 .rowHeading-git{
@@ -34,6 +34,10 @@ a{
 
 .cardText-count{
     color:gray;
+}
+
+.cardText-name-git{
+    font-weight: bold;
 }
 
 

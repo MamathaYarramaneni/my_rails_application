@@ -1,0 +1,19 @@
+</br>
+<h2>Hey,Comment here on <%=@idvalue %></h2>
+</br>
+<%= form_for(@comments) do |f| %>
+  <div class="form-group">
+  
+   
+    <label>User</label>
+    <%= f.text_field :user_id,value:@user, class: "form-control", readonly:true%>
+    <br/>
+    <label>Comment Description</label>
+    <%= f.text_area :content,class: "form-control", placeholder: "comment description", required: true %><br/>
+   <br/>
+    <%= f.submit "Comment", class: "btn btn-dark" %>
+  </div>
+<% end %>
+
+
+

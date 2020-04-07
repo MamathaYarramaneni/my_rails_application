@@ -1,0 +1,70 @@
+// Place all the styles related to the BlogPosts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a{
+    text-decoration: none !important;
+}
+.Heading{
+    margin:0 auto;
+    display: flex;
+    max-width:700px;
+    margin-top:20px;
+    margin-bottom:20px;
+    align-items: center;
+    font-family: monospace;
+    
+}
+
+.CreateButton{
+    float: right !important;
+    background-color: rgb(29, 6, 32);
+    border-radius: 4px;
+    margin-left:350px;
+    color:#ffffff;
+    padding: 10px 20px;
+}
+.Image{
+    width:50px;
+    height:50px;
+}
+
+.Title{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.cardModel{
+    background-color: white;
+}
+
+.cardEntry{
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    background-color: #f1edf7;
+    height:100px;
+    width:700px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.cardText{
+    padding-left:10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.cardLikes{
+    margin-left:10px;
+    float: right;
+    color:gray;
+    margin-right: 10px;
+}

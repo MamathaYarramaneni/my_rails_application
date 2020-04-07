@@ -1,0 +1,19 @@
+<div class="rowHeading-twitter"> 
+  <div class="image-twitter">
+ 	  <%= image_tag("twit.png", :alt => "rss feed", :size => '55x55') %> 
+  </div>
+  <div class="title-twitter"><h2>My Tweets!</h2></div>
+</div>
+</br>
+<%  @timeline.each do |tweet| %>    
+  <div class="cardModel-tweet" >
+    <div class="cardText-name-tweet" >
+      <%= tweet.text %>
+    </div>
+    <div class="cardText-name-count" >
+      <%= tweet.retweet_count %> retweets
+    </div>
+  </div>
+<% end %>
+
+

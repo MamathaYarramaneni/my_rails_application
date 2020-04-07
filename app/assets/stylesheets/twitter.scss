@@ -1,0 +1,33 @@
+// Place all the styles related to the Twitter controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cardModel-tweet{
+    background-color:  #f1edf7;
+    font-size:20px;
+    padding:20px 50px;
+    border-radius: 4px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom:20px;
+    font-family:monospace;
+}
+
+.rowHeading-twitter{
+    margin: 0 auto;
+    margin-top:20px;
+    align-items: center;
+    font-family: monospace;
+    font-weight: bold;
+    max-width: 1000px;
+    display: flex;
+}
+
+.title-twitter{
+    padding-left:20px;
+}
+
+.cardText-name-count{
+    color: gray;
+}
+

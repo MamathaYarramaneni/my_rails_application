@@ -1,0 +1,51 @@
+<%= stylesheet_link_tag "style" %>
+<div class="jumbotron" style="background-color: #c6c1e8; margin-top:50px;">
+  <h1 class="display-3">Hey there Everyone!</h1>
+  <p class="lead">This is a blog showcasing my interests</p>
+  <hr class="my-4">
+ 
+ <div class="row" style="margin-top:20px">
+   <div class="col-md-1 float-left ">
+ 	 <%= image_tag("yinyang.png", :alt => "rss feed", :size => '50x50') %>
+    </div>
+  <div class="col-md-8">
+    <h2>My Blogs!</h2>
+  </div>
+
+  <div class="col-md-2" >
+    <a class="btn btn-dark float-right" style="background-color: #e6e9ed; color:black;" href="<%= blog_posts_path  %>" role="button">Check out!</a>
+  </div>
+  
+</div>
+
+<br/>
+ <div class="row" style="margin-top:20px">
+   <div class="col-md-1 float-left ">
+ 	<%= image_tag("gith.png", :alt => "rss feed", :size => '50x50') %> 
+    </div>
+  <div class="col-md-8">
+    <h2>My Github Repos!</h2>
+  </div>
+
+  <div class="col-md-2">
+    <a class="btn btn-dark float-right" style="background-color: #e6e9ed; color:black;" href="<%= github_index_path  %>" role="button">Check out!</a>
+  </div>
+  
+</div>
+ 
+<br/>
+ <div class="row" style="margin-top:20px">
+   <div class="col-md-1 float-left ">
+ 	<%= image_tag("twit.png", :alt => "rss feed", :size => '55x55') %> 
+    </div>
+  <div class="col-md-8">
+    <h2>My Tweets!</h2>
+  </div>
+
+  <div class="col-md-2">
+    <a class="btn btn-dark float-right" style="background-color: #e6e9ed; color:black;" href="<%= twitter_index_path  %>" role="button">Check out!</a>
+  </div>
+  
+</div>
+ 
+</div>

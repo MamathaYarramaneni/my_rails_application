@@ -1,0 +1,25 @@
+  <div class="rowHeading-git">
+    <div class="image-git">
+ 	<%= image_tag("github.png", :alt => "rss feed", :size => '50x50') %> 
+    </div>
+    <div class="title-git"><h2>My Github Repositories</h2></div>
+   
+  </div>
+   </br>
+
+  <%  @repos_from_github.each do |repo| %>
+ <ul class="cardModel-git" >
+  <div class="card-body" >
+   <div class="cardText-name" style="font-weight:bold;">
+     <%= repo.name %>
+   </div>
+    <div class="cardText-url " >
+    <a style="color: black;"href="#">   <%= repo.url %></a>
+   </div>
+    <div class="cardText-count" >
+     <%= repo.stargazers_count %> stars
+   <div>
+  </div>
+  </ul>
+   <% end %>
+

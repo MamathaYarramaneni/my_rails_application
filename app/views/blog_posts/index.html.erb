@@ -1,0 +1,32 @@
+<div class="Heading" >
+  <div class="Image">
+ 	<%= image_tag("yinyang.png", :alt => "rss feed", :size => '50x50') %> 
+    </div>
+  <div class="Title">
+    <h2>My Blogs!</h2>
+  </div>
+   <% if current_user.admin? %>
+  <div class="CreateButton">
+    <a style="color:white;float:right;" href="<%=new_blog_post_path %>" role="button">Create</a>
+  </div>
+   <% end %>
+</div>
+ 
+ <div class="cardModel"> 
+   <% @blogs.each do |blog| %>
+  <div class="cardEntry">
+  <a class ="cardText" style="color:black;" href="<%= blog_post_path(id: blog.id)%>"><%= blog.title %></a>
+  <% if blog.likes.nil? %>
+      0 likes
+  <% else %>
+  <div class="cardLikes">
+  <%= blog.likes %> likes
+  </div>
+  <% end %>
+  </div>
+    <% end %>
+  </div>
+
+  
+  
+

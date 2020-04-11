@@ -34,22 +34,19 @@
 
 </br>
 
-<div class="jumbotron" style="background-color:#2f2e30;color:white;font-family:monospace;font-size:18px;">
+<div class="jumbotron" style="background-color:#394454;color:white;font-family:monospace;font-size:18px;">
 
  <h2> Comments</h2>  
-<div class="row" style="margin-top:20px;">
+<div class="row" style="margin:20px 20px;">
   <div class="col-md-9 font-weight-bold">
-    <% @users.each do |user|%> 
-    <% if user.email==current_user.email %>
-     <p><%= user.email %></p>
-     <% end %>
-    <% end %>
+    <%= current_user.email%>
   </div> 
   <div class="col-md-3">
    <a class="btn btn-light btn-lg float-right" href="<%= new_comment_path %>" role="button">New Comment</a>
   </div>
 </div>
 
+<div style="background-color:#f1edf7;color:black;border-radius:4px;padding:10px 10px;margin:10px 10px;">
 <% @comments.each do |comment| %>
 
  <div class="row" style="margin-top:30px;">
@@ -66,7 +63,7 @@
   
 </div>
   <% end %>
-
+</div>
 </div>
 
 </br>

@@ -22,10 +22,17 @@
   <div class="cardLikes">
   <%= blog.likes %> likes
   </div>
+  <div class="cardDate">
+  <%= blog.created_at.to_date.to_s(:short) %>
+  </div>
   <% end %>
   </div>
     <% end %>
   </div>
+
+  </br>
+  </br>
+  </br>
 
   
   

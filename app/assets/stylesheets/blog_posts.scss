@@ -50,7 +50,7 @@ a{
     padding-top:10px;
     padding-bottom:10px;
     margin-top:10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 4px;
     font-family: monospace;
 }
@@ -63,6 +63,14 @@ a{
 }
 
 .cardLikes{
+    margin-left:10px;
+    float: right;
+    color:gray;
+    margin-right: 10px;
+    padding: 10px 10px;
+}
+
+.cardDate{
     margin-left:10px;
     float: right;
     color:gray;

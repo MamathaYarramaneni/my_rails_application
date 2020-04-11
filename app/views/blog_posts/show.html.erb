@@ -2,7 +2,7 @@
 
 <div class="row" style="margin-top:30px;">
   <div class="col-md-1 float-left ">
- 	<%= image_tag("yinyang.png", :alt => "rss feed", :size => '55x55') %> 
+ 	<%= image_tag("yinyang.png", :alt => "blogs", :size => '55x55') %> 
     </div>
   <div class="col-md-10">
     <h2> <%= blog.title %></h2>   
@@ -11,7 +11,7 @@
 <br/>
 <div class="card" style="padding: 30px 30px; font-family:monospace; background-color:#f1edf7;">
   <div class="col-md-6 font-weight-bold" >
-    <h2>Description:</h2>
+    <h2 style="font-weight:bold;">Description:</h2>
   </div>
   </br>
   <div class="col-md-12" style="font-size:25px;">
@@ -46,7 +46,7 @@
   </div>
 </div>
 
-<div style="background-color:#f1edf7;color:black;border-radius:4px;padding:10px 10px;margin:10px 10px;">
+<div style="background-color:#f1edf7;color:black;border-radius:4px;padding:10px 20px;padding-bottom:20px;margin:10px 10px;">
 <% @comments.each do |comment| %>
 
  <div class="row" style="margin-top:30px;">
